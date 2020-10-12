@@ -11,12 +11,10 @@ public class Jump : MonoBehaviour
 
     void Update()
     {
-        /*//MOVEMENT
         var horiAxis = Input.GetAxis("Horizontal");
         var vertAxis = Input.GetAxis("Vertical");
-        Vector3 move = new Vector3(horiAxis, 0,vertAxis);
-        controller.Move(move * (Time.deltaTime * moveSpeed));
-
+        Vector3 move = new Vector3(horiAxis, velocity.y,vertAxis);
+        
         if (Input.GetKey(KeyCode.LeftShift))
         {
             moveSpeed = 15f;
@@ -25,7 +23,6 @@ public class Jump : MonoBehaviour
         {
             moveSpeed = 7.5f;
         }
-        */
         
         if (Input.GetButtonDown("Jump") && jumpCount < 2)
         {
@@ -38,6 +35,7 @@ public class Jump : MonoBehaviour
         }
         
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+        //controller.Move(velocity * Time.deltaTime);
+        controller.Move(move * (Time.deltaTime * moveSpeed));
     }
 }
