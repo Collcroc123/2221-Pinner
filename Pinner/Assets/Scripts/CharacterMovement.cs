@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Jump : MonoBehaviour
+public class CharacterMovement : MonoBehaviour
 {
     public CharacterController controller;
     private Vector3 velocity;
