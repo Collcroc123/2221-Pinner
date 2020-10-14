@@ -90,8 +90,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Bullet.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
-          <e p="Move.cs" t="Include" />
+          <e p="Shooting.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
         </e>
       </e>
