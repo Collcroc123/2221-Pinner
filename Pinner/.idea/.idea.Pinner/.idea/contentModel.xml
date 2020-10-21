@@ -92,6 +92,10 @@
         <e p="Scripts" t="Include">
           <e p="Bullet.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
+          <e p="EnemyDamage.cs" t="Include" />
+          <e p="IntData.cs" t="Include" />
+          <e p="PlayerHealth.cs" t="Include" />
+          <e p="PlayerRespawn.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
         </e>
