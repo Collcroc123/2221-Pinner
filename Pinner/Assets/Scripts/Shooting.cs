@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +9,7 @@ public class Shooting : MonoBehaviour
     public GameObject prefab;
     public Transform instancer;
     public Slider ammoBar;
-    private WaitForSeconds reloadTime = new WaitForSeconds(2f);
+    private WaitForSeconds reloadTime = new WaitForSeconds(0.01f);
 
     private void Start()
     {

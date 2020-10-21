@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
     public int healthAmount = 0;
     public IntData health;
     public bool doesDamage;
+    public bool changesMaxHealth;
+    public IntData maxHealth;
+    public Slider healthBar;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -12,18 +16,32 @@ public class HealthManager : MonoBehaviour
         {
             if (doesDamage)
             {
-                print("Took Damage!");
-                health.value -= healthAmount;
+                if (changesMaxHealth)
+                {
+                    maxHealth.value -= healthAmount;
+                    healthBar.maxValue = maxHealth.value;
+                }
+                else if (!changesMaxHealth)
+                {
+                    health.value -= healthAmount;
+                }
             }
-            else
+            else if (!doesDamage)
             {
-                print("Healed!");
-                health.value += healthAmount;
+                if (changesMaxHealth)
+                {
+                    maxHealth.value += healthAmount;
+                    healthBar.maxValue = maxHealth.value;
+                }
+                else if (!changesMaxHealth)
+                {
+                    health.value += healthAmount;
+                }
             }
-        
-            if (health.value > 100)
+
+            if (health.value > maxHealth.value)
             {
-                health.value = 100;
+                health.value = maxHealth.value;
             }
         }
     }
