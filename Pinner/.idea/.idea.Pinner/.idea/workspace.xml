@@ -21,12 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d76b2c2-5137-46a1-b02f-99107dadb719" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Damage.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Damage.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Player.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Player.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +40,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Jump.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IntData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" />
@@ -55,6 +49,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" />
       </list>
     </option>
   </component>
@@ -103,6 +98,8 @@
       <workItem from="1602709249185" duration="5401000" />
       <workItem from="1603141912068" duration="4441000" />
       <workItem from="1603313351817" duration="5397000" />
+      <workItem from="1603648972749" duration="1477000" />
+      <workItem from="1603671399244" duration="69000" />
     </task>
     <servers />
   </component>
