@@ -4,22 +4,22 @@ using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
-    public int ammoCount;
-    private int maxAmmo = 20;
+    public IntData ammoCount;
+    public IntData maxAmmo;
     public GameObject prefab;
     public Transform instancer;
     public Slider ammoBar;
     private WaitForSeconds reloadTime = new WaitForSeconds(0.01f);
+    //public GameObject mouseObj;
 
     private void Start()
     {
-        ammoCount = maxAmmo;
-        ammoBar.maxValue = maxAmmo;
+        ammoBar.maxValue = maxAmmo.value;
     }
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && ammoCount > 0)
+        if (Input.GetButtonDown("Fire1") && ammoCount.value > 0)
         {
             fire();
         }
@@ -28,24 +28,19 @@ public class Shooting : MonoBehaviour
         {
             StartCoroutine(reload());
         }
-
-        ammoBar.value = ammoCount;
+        //transform.LookAt(mouseObj.transform);
+        ammoBar.value = ammoCount.value;
     }
 
     private void fire()
     {
         Instantiate(prefab, instancer.position, instancer.rotation);
-        ammoCount--;
-        
-        if (ammoCount == 0)
-        {
-            //StartCoroutine(reload());
-        }
+        ammoCount.value--;
     }
 
     private IEnumerator reload()
     {
         yield return reloadTime;
-        ammoCount = maxAmmo;
+        ammoCount.value = maxAmmo.value;
     }
 }
