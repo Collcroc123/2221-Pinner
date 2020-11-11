@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class TriggerEvents : MonoBehaviour
 {
+    public UnityEvent enterEvent, stayEvent, exitEvent;
     private MeshRenderer mesh;
-    public Color defaultColor = Color.red;
-    public Color enterColor = Color.blue;
+    
     void Start()
     {
         mesh = GetComponent<MeshRenderer>();
@@ -15,16 +13,16 @@ public class TriggerEvents : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        mesh.material.color = enterColor;
+        enterEvent.Invoke();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        
+        stayEvent.Invoke();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        mesh.material.color = defaultColor;
+        exitEvent.Invoke();
     }
 }
