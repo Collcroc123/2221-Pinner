@@ -143,7 +143,6 @@
             <e p="Codes" t="Include">
               <e p="FloatData.cs" t="Include" />
               <e p="IntData.cs" t="Include" />
-              <e p="SpawnData.cs" t="Include" />
               <e p="Vector3Data.cs" t="Include" />
             </e>
           </e>
@@ -152,6 +151,7 @@
           <e p="PlayerAttack.cs" t="Include" />
           <e p="PlayerRespawn.cs" t="Include" />
           <e p="SceneSwitch.cs" t="Include" />
+          <e p="SetSpawn.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
         </e>

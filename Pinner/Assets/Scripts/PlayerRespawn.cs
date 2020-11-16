@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class PlayerRespawn : MonoBehaviour
 {
     public IntData health;
-    public GameObject spawnPoint;
+    public Vector3Data spawnPoint;
     private CharacterController controller;
     public IntData maxHealth;
     public Slider healthBar;
@@ -17,6 +17,7 @@ public class PlayerRespawn : MonoBehaviour
         controller = GetComponent<CharacterController>();
         health.value = maxHealth.value;
         healthBar.maxValue = maxHealth.value;
+        StartCoroutine(spawn());
     }
 
     private void Update()
@@ -32,7 +33,7 @@ public class PlayerRespawn : MonoBehaviour
     {
         controller.enabled = false;
         yield return spawnTime;
-        transform.position = spawnPoint.transform.position;
+        transform.position = spawnPoint.value;
         controller.enabled = true;
     }
     
@@ -41,7 +42,7 @@ public class PlayerRespawn : MonoBehaviour
         health.value = maxHealth.value;
         controller.enabled = false;
         yield return deathTime;
-        transform.position = spawnPoint.transform.position;
+        transform.position = spawnPoint.value;
         controller.enabled = true;
     }
 }
