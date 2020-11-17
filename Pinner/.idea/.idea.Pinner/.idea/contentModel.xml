@@ -137,6 +137,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AIBehaviour.cs" t="Include" />
           <e p="Bullet.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
           <e p="Datas" t="Include">
