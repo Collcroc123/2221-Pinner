@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -9,65 +7,70 @@ using Random = UnityEngine.Random;
 public class AIBehaviour : MonoBehaviour
 {
     private NavMeshAgent agent;
-    public Transform player;
-    public bool canNavigate = false;
-    public bool canPatrol = true;
     private WaitForFixedUpdate wffu;
-    public float holdTime = 2f;
-    private WaitForSeconds wfs;
-    public List<Transform> patrolPoints;
+    private WaitForSeconds waitFor;
+    private WaitForSeconds focusFor;
     private Vector3 startPos;
+    private bool canPatrol = true;
+    private bool canNavigate;
+    public Transform player;
+    public float waitTime = 2.5f;
+    public float focusTime = 1.5f;
+    public float runSpeed = 8f;
+    public float patrolSpeed = 4f;
     public int patrolRange = 5;
-
+    
     private void Start()
     {
         startPos = transform.position;
-        i = 0;
         agent = GetComponent<NavMeshAgent>();
-        wfs = new WaitForSeconds(holdTime);
+        waitFor = new WaitForSeconds(waitTime);
+        focusFor = new WaitForSeconds(focusTime);
         StartCoroutine(Patrol());
     }
 
     private IEnumerator Navigate()
     {
-        canNavigate = true;
         canPatrol = false;
-        yield return wfs;
+        canNavigate = true;
+        print("Focusing");
+        yield return focusFor;
         while (canNavigate)
         {
+            print("Chasing");
+            agent.speed = runSpeed;
             yield return wffu;
             agent.destination = player.position;
-            print("walking");
         }
     }
-
-    private int i = 0;
+    
     private IEnumerator Patrol()
     {
         canPatrol = true;
         canNavigate = false;
         while (canPatrol)
         {
+            agent.speed = patrolSpeed;
             yield return wffu;
             if (agent.pathPending || !(agent.remainingDistance < 0.5f)) continue;
-            //agent.destination = patrolPoints[i].position;
-            //i = (i + 1) % patrolPoints.Count;
+            print("Waiting");
+            yield return waitFor;
+            print("Patrolling");
             agent.destination = (Random.insideUnitSphere * patrolRange) + startPos;
-            yield return wfs;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        canNavigate = false;
         canPatrol = false;
+        canNavigate = false;
         StartCoroutine(Navigate());
     }
 
     private void OnTriggerExit(Collider other)
     {
-        canNavigate = false;
         canPatrol = false;
+        canNavigate = false;
         StartCoroutine(Patrol());
     }
 }
