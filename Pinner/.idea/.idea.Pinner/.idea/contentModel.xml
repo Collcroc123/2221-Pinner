@@ -138,15 +138,18 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AIBehaviour.cs" t="Include" />
+          <e p="BattleManager.cs" t="Include" />
           <e p="Bullet.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
           <e p="Datas" t="Include">
             <e p="Codes" t="Include">
+              <e p="BoolData.cs" t="Include" />
               <e p="FloatData.cs" t="Include" />
               <e p="IntData.cs" t="Include" />
               <e p="Vector3Data.cs" t="Include" />
             </e>
           </e>
+          <e p="FirstHit.cs" t="Include" />
           <e p="HealthManager.cs" t="Include" />
           <e p="MouseObj.cs" t="Include" />
           <e p="PlayerAttack.cs" t="Include" />

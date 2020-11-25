@@ -14,11 +14,12 @@ public class AIBehaviour : MonoBehaviour
     private bool canPatrol = true;
     private bool canNavigate;
     public Transform player;
-    public float waitTime = 2.5f;
-    public float focusTime = 1.5f;
+    public float waitTime = 2f;
+    public float focusTime = 1f;
     public float runSpeed = 8f;
     public float patrolSpeed = 4f;
     public int patrolRange = 5;
+    public bool seen = false;
     
     private void Start()
     {
@@ -28,7 +29,7 @@ public class AIBehaviour : MonoBehaviour
         focusFor = new WaitForSeconds(focusTime);
         StartCoroutine(Patrol());
     }
-
+    
     private IEnumerator Navigate()
     {
         canPatrol = false;
@@ -37,6 +38,7 @@ public class AIBehaviour : MonoBehaviour
         yield return focusFor;
         while (canNavigate)
         {
+            seen = true;
             print("Chasing");
             agent.speed = runSpeed;
             yield return wffu;
@@ -59,18 +61,19 @@ public class AIBehaviour : MonoBehaviour
             agent.destination = (Random.insideUnitSphere * patrolRange) + startPos;
         }
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         canPatrol = false;
         canNavigate = false;
         StartCoroutine(Navigate());
     }
-
+    
     private void OnTriggerExit(Collider other)
     {
         canPatrol = false;
         canNavigate = false;
+        seen = false;
         StartCoroutine(Patrol());
     }
 }
