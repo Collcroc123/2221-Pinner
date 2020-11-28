@@ -1,21 +1,27 @@
-﻿using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
-    public AIBehaviour artInt;
-    public BoolData firstHit;
+    private float rotateSpeed = 180f;
+    private bool enterRotation = false;
 
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
-        if (artInt.seen == false)
+        if (!enterRotation)
         {
-            firstHit.value = true;
+            RotatePlayer();
         }
-        else if (artInt.seen == true)
+    }
+
+    void RotatePlayer()
+    {
+        var hInput = Input.GetAxis("Horizontal") * Time.deltaTime*rotateSpeed;
+        transform.Rotate(0,hInput,0);
+        if (Input.GetButtonDown("Jump"))
         {
-            firstHit.value = false;
+            enterRotation = true;
         }
-        SceneManager.LoadScene(1);
     }
 }

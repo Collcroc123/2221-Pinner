@@ -149,6 +149,7 @@
               <e p="Vector3Data.cs" t="Include" />
             </e>
           </e>
+          <e p="FirstAttackManager.cs" t="Include" />
           <e p="FirstHit.cs" t="Include" />
           <e p="HealthManager.cs" t="Include" />
           <e p="MouseObj.cs" t="Include" />
