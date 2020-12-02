@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
-    private float rotateSpeed = 180f;
+    private float rotateSpeed = 90f;
     private bool enterRotation = false;
 
     void Update()
@@ -18,7 +18,7 @@ public class BattleManager : MonoBehaviour
     void RotatePlayer()
     {
         var hInput = Input.GetAxis("Horizontal") * Time.deltaTime*rotateSpeed;
-        transform.Rotate(0,hInput,0);
+        transform.Rotate(0,-hInput,0);
         if (Input.GetButtonDown("Jump"))
         {
             enterRotation = true;
