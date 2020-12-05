@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d76b2c2-5137-46a1-b02f-99107dadb719" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/World.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/World.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MouseObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Datas/Codes/SpawnData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Datas/Codes/Vector3Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SetSpawn.cs" />
@@ -71,8 +70,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Datas/Codes/BoolData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirstHit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerRoller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" />
       </list>
     </option>
   </component>
@@ -133,7 +133,8 @@
       <workItem from="1606596152634" duration="3361000" />
       <workItem from="1606948986513" duration="619000" />
       <workItem from="1607046736055" duration="7927000" />
-      <workItem from="1607129496831" duration="1478000" />
+      <workItem from="1607129496831" duration="2104000" />
+      <workItem from="1607195552919" duration="3002000" />
     </task>
     <servers />
   </component>

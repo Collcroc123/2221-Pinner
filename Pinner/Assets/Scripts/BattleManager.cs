@@ -52,41 +52,36 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    private float startValue, endValue;
+
     IEnumerator SpeedPlayer()
     {
         if (playerPower < 256f)
         {
-            while (playerPower < 256f)
-            {
-                playerPower *= 2f;
-                if (Input.GetButtonDown("Jump"))
-                {
-                    enterSpeed = true;
-                }
-                print(playerPower);
-                powerBar.value = Mathf.Lerp(playerPower/2, playerPower, lerpTime * Time.deltaTime);
-                yield return waitFor;
-            }
+            startValue = playerPower;
+            playerPower *= 2f;
+            endValue = playerPower;
+        }
+
+        else if (playerPower >= 256f)
+        {
+            startValue = playerPower;
+            playerPower /= 2f;
+            endValue = playerPower;
         }
         
-        if (playerPower >= 256f)
+        if (Input.GetButtonDown("Jump"))
         {
-            while (playerPower > 1f)
-            {
-                playerPower /= 2f;
-                if (Input.GetButtonDown("Jump"))
-                {
-                    enterSpeed = true;
-                }
-                print(playerPower);
-                powerBar.value = Mathf.Lerp(playerPower*2, playerPower, lerpTime * Time.deltaTime);
-                yield return waitFor;
-            }
+            enterSpeed = true;
         }
+        
+        powerBar.value = Mathf.Lerp(startValue, endValue, lerpTime * Time.deltaTime);
+        yield return waitFor;
         yield return wffu;
     }
     /*
     IEnumerator LaunchPlayer()
     {
+        
     }*/
 }
