@@ -155,6 +155,7 @@
           <e p="MouseObj.cs" t="Include" />
           <e p="PlayerAttack.cs" t="Include" />
           <e p="PlayerRespawn.cs" t="Include" />
+          <e p="PlayerRoller.cs" t="Include" />
           <e p="SceneSwitch.cs" t="Include" />
           <e p="SetSpawn.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />
