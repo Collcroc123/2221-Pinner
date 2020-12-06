@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 1213596938809484132}
   - component: {fileID: 1213596938809484133}
   - component: {fileID: 1213596938809484126}
-  - component: {fileID: 1213596938809484127}
   m_Layer: 0
   m_Name: Player Cube
   m_TagString: Player
@@ -148,20 +147,3 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   maxHealth: {fileID: 11400000, guid: 84326508f386a8a40ad3ac976d0a444b, type: 2}
   healthBar: {fileID: 0}
---- !u!114 &1213596938809484127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213596938809484134}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075584d5ea3611b4ab80610759e4ec3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoCount: {fileID: 11400000, guid: ec44e77bdf5fd1d4c83566f8af2e62c4, type: 2}
-  maxAmmo: {fileID: 11400000, guid: 647b119f700ab1d459aaecc4a2d36781, type: 2}
-  prefab: {fileID: 1724078215911388600, guid: 1b02f96840a234742a44ed9a70d4d8e0, type: 3}
-  instancer: {fileID: 0}
-  ammoBar: {fileID: 0}
