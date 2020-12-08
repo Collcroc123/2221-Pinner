@@ -21,11 +21,58 @@
   <component name="ChangeListManager">
     <list default="true" id="3d76b2c2-5137-46a1-b02f-99107dadb719" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Cube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Cube.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BattleTerrain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BattleTerrain.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Circle Area.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Circle Area.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Damage.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Damage.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Health.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Health.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/House 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/House 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/NewLayer 1.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/NewLayer 1.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/NewLayer 2.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/NewLayer 2.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/NewLayer.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/NewLayer.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Rocks.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Rocks.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Tree Bark.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Tree Bark.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/_rass Path.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/_rass Path.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/_rass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/_rass.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/_tone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/_tone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Cube.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Battle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Battle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/House 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/House 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/World.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/World.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree_Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree_Textures/diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree_Textures/diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree_Textures/normal_specular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree_Textures/normal_specular.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree_Textures/shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree_Textures/shadow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree_Textures/translucency_gloss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tree_Textures/translucency_gloss.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WorldTerrain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WorldTerrain.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +115,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Datas/Codes/Vector3Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SetSpawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Datas/Codes/BoolData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirstHit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerRoller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" />
       </list>
     </option>
   </component>
@@ -146,6 +193,7 @@
       <workItem from="1607129496831" duration="2104000" />
       <workItem from="1607195552919" duration="3002000" />
       <workItem from="1607289351002" duration="1160000" />
+      <workItem from="1607372652064" duration="12937000" />
     </task>
     <servers />
   </component>
@@ -174,5 +222,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605732019133" />
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1607389071831">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607389071831" />
   </component>
 </project>

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,9 +10,13 @@ public class BattleManager : MonoBehaviour
     private float playerPower = 1f;
     private bool enterRotation = false;
     private bool enterSpeed = false;
-    public float waitTime = 1f;
-    public float lerpTime = 1f;
+    private bool coroRunning = false;
+    public float waitTime = 3f;
+    public float increase = 2f;
     public Slider powerBar;
+    public GameObject arrowObject;
+    public GameObject playerObject;
+    public Rigidbody playerRB;
 
     private void Start()
     {
@@ -23,65 +25,92 @@ public class BattleManager : MonoBehaviour
 
     void Update()
     {
-        if (!enterRotation)
+        if (!enterRotation && !coroRunning)
         {
             RotatePlayer();
         }
-        else if (enterRotation)
+        else if (enterRotation && !coroRunning)
         {
-            if (!enterSpeed)
+            if (!enterSpeed && !coroRunning)
             {
-                StartCoroutine(SpeedPlayer());
+                StartCoroutine(PowerPlayer());
             }
-            else if (enterSpeed)
+            else if (enterSpeed && !coroRunning)
             {
-                //LaunchPlayer();
+                StartCoroutine(LaunchPlayer());
             }
         }
-        
-        //powerBar.value = playerPower;
     }
 
     void RotatePlayer()
     {
+        coroRunning = true;
         var hInput = Input.GetAxis("Horizontal") * Time.deltaTime*rotateSpeed;
         transform.Rotate(0,-hInput,0);
         if (Input.GetButtonDown("Jump"))
         {
             enterRotation = true;
         }
+        coroRunning = false;
     }
 
-    private float startValue, endValue;
-
-    IEnumerator SpeedPlayer()
+    IEnumerator PowerPlayer()
     {
-        if (playerPower < 256f)
+        coroRunning = true;
+        if (playerPower < 2000f)
         {
-            startValue = playerPower;
-            playerPower *= 2f;
-            endValue = playerPower;
-        }
-
-        else if (playerPower >= 256f)
-        {
-            startValue = playerPower;
-            playerPower /= 2f;
-            endValue = playerPower;
-        }
-        
-        if (Input.GetButtonDown("Jump"))
-        {
-            enterSpeed = true;
+            while (playerPower < 2000f)
+            {
+                playerPower += increase;
+                powerBar.value = playerPower;
+                if (Input.GetButtonDown("Jump"))
+                {
+                    enterSpeed = true;
+                    break;
+                }
+                yield return wffu;
+            }
         }
         
-        powerBar.value = Mathf.Lerp(startValue, endValue, lerpTime * Time.deltaTime);
-        yield return waitFor;
-        yield return wffu;
+        else if (playerPower >= 2000f)
+        {
+            while (playerPower > 1f)
+            {
+                playerPower -= increase;
+                powerBar.value = playerPower;
+                if (Input.GetButtonDown("Jump"))
+                {
+                    enterSpeed = true;
+                    break;
+                }
+                yield return wffu;
+            }
+        }
+        powerBar.value = playerPower;
+        coroRunning = false;
     }
-    /*
+
     IEnumerator LaunchPlayer()
     {
-        
-    }*/
+        coroRunning = true;
+        playerObject.transform.parent = null;
+        playerRB.constraints = RigidbodyConstraints.None;
+        playerRB.useGravity = true;
+        playerRB.AddRelativeForce(Vector3.forward * playerPower);
+        yield return waitFor;
+        playerRB.useGravity = false;
+        playerRB.velocity = new Vector3(0,0,0);
+        playerRB.constraints = RigidbodyConstraints.FreezeAll;
+        gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
+        playerObject.transform.parent = gameObject.transform;
+        playerObject.transform.position = new Vector3(0, 0.6f, -10);
+        playerObject.transform.rotation = new Quaternion(0, 0, 0, 0);
+        arrowObject.transform.position = new Vector3(0, 0.5f, -8);
+        arrowObject.transform.rotation = new Quaternion(0, 0, 0, 0);
+        yield return wffu;
+        playerPower = 1f;
+        coroRunning = false;
+        enterRotation = false;
+        enterSpeed = false;
+    }
 }

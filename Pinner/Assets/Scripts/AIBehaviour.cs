@@ -34,12 +34,12 @@ public class AIBehaviour : MonoBehaviour
     {
         canPatrol = false;
         canNavigate = true;
-        print("Focusing");
+        //print("Focusing");
         yield return focusFor;
         while (canNavigate)
         {
             seen = true;
-            print("Chasing");
+            //print("Chasing");
             agent.speed = runSpeed;
             yield return wffu;
             agent.destination = player.position;
@@ -55,9 +55,9 @@ public class AIBehaviour : MonoBehaviour
             agent.speed = patrolSpeed;
             yield return wffu;
             if (agent.pathPending || !(agent.remainingDistance < 0.5f)) continue;
-            print("Waiting");
+            //print("Waiting");
             yield return waitFor;
-            print("Patrolling");
+            //print("Patrolling");
             agent.destination = (Random.insideUnitSphere * patrolRange) + startPos;
         }
     }
