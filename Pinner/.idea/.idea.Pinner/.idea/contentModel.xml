@@ -159,6 +159,7 @@
           <e p="SceneSwitch.cs" t="Include" />
           <e p="SetSpawn.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />
+          <e p="TouchDetector.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
         </e>
       </e>

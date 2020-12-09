@@ -17,6 +17,7 @@ public class BattleManager : MonoBehaviour
     public GameObject arrowObject;
     public GameObject playerObject;
     public Rigidbody playerRB;
+    public BoolData enemyTurn;
 
     private void Start()
     {
@@ -25,19 +26,22 @@ public class BattleManager : MonoBehaviour
 
     void Update()
     {
-        if (!enterRotation && !coroRunning)
+        if (enemyTurn.value == false)
         {
-            RotatePlayer();
-        }
-        else if (enterRotation && !coroRunning)
-        {
-            if (!enterSpeed && !coroRunning)
+            if (!enterRotation && !coroRunning)
             {
-                StartCoroutine(PowerPlayer());
+                RotatePlayer();
             }
-            else if (enterSpeed && !coroRunning)
+            else if (enterRotation && !coroRunning)
             {
-                StartCoroutine(LaunchPlayer());
+                if (!enterSpeed && !coroRunning)
+                {
+                    StartCoroutine(PowerPlayer());
+                }
+                else if (enterSpeed && !coroRunning)
+                {
+                    StartCoroutine(LaunchPlayer());
+                }
             }
         }
     }
@@ -112,5 +116,7 @@ public class BattleManager : MonoBehaviour
         coroRunning = false;
         enterRotation = false;
         enterSpeed = false;
+        powerBar.value = playerPower;
+        enemyTurn.value = true;
     }
 }

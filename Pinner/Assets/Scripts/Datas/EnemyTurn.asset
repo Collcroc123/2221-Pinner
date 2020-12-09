@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc6a08493d7845e4aa492437e9d9d77c, type: 3}
-  m_Name: FirstHit
+  m_Name: EnemyTurn
   m_EditorClassIdentifier: 
   value: 0
