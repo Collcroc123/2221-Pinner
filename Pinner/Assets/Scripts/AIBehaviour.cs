@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using NavMeshBuilder = UnityEditor.AI.NavMeshBuilder;
 using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(NavMeshAgent))]
@@ -23,8 +21,9 @@ public class AIBehaviour : MonoBehaviour
     public int patrolRange = 5;
     public bool seen = false;
     public bool attackMode = false;
-    public Rigidbody rbPlayer;
     public BoolData enemyTurn;
+    public GameObject damage;
+    private bool coroRunning = false;
 
     private void Start()
     {
@@ -32,13 +31,30 @@ public class AIBehaviour : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         waitFor = new WaitForSeconds(waitTime);
         focusFor = new WaitForSeconds(focusTime);
-        canPatrol = true;
-        canNavigate = false;
         StartCoroutine(Patrol());
     }
-    
-    private IEnumerator Navigate()
+
+    private void Update()
     {
+        if (!coroRunning)
+        {
+            canPatrol = false;
+            canNavigate = false;
+            if (attackMode || enemyTurn.value == true)
+            {
+                StartCoroutine(Navigate());
+            }
+            else
+            {
+                StartCoroutine(Patrol());
+            }
+        }
+    }
+
+    public IEnumerator Navigate()
+    {
+        coroRunning = true;
+        damage.SetActive(true);
         canPatrol = false;
         canNavigate = true;
         yield return focusFor;
@@ -48,11 +64,19 @@ public class AIBehaviour : MonoBehaviour
             agent.speed = runSpeed;
             yield return wffu;
             agent.destination = player.position;
+            if (enemyTurn.value == false)
+            {
+                coroRunning = false;
+                StopCoroutine(Navigate());
+                break;
+            }
         }
     }
 
     public IEnumerator Patrol()
     {
+        coroRunning = true;
+        damage.SetActive(false);
         canPatrol = true;
         canNavigate = false;
         while (canPatrol)
@@ -62,6 +86,12 @@ public class AIBehaviour : MonoBehaviour
             if (agent.pathPending || !(agent.remainingDistance < 0.5f)) continue;
             yield return waitFor;
             agent.destination = (Random.insideUnitSphere * patrolRange) + startPos;
+            if (enemyTurn.value == true)
+            {
+                coroRunning = false;
+                StopCoroutine(Patrol());
+                break;
+            }
         }
     }
     
@@ -69,9 +99,8 @@ public class AIBehaviour : MonoBehaviour
     {
         canPatrol = false;
         canNavigate = false;
-        if (attackMode || enemyTurn)
+        if (attackMode || enemyTurn.value == true)
         {
-            print("Starting Nav");
             StartCoroutine(Navigate());
         }
         else

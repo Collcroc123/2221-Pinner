@@ -223,10 +223,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI (7)
@@ -293,10 +305,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI (8)
@@ -2033,10 +2057,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI (1)
@@ -2199,10 +2235,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI (2)
@@ -3338,10 +3386,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI (4)
@@ -4085,10 +4145,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI (5)
@@ -4160,10 +4232,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI (3)
@@ -4488,10 +4572,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI (6)
@@ -4853,10 +4949,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI (9)
@@ -5058,10 +5166,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073972024}
     m_Modifications:
+    - target: {fileID: 6478027263005556164, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 692337601}
     - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1404872287}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: enemyTurn
+      value: 
+      objectReference: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+    - target: {fileID: 6478027263414452234, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
+      propertyPath: attackMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6478027263414452235, guid: 54f6de3c79e4cbe48bab02f7a67ff28d, type: 3}
       propertyPath: m_Name
       value: AI

@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   artInt: {fileID: 6478027263414452234}
-  firstHit: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+  enemyTurn: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
 --- !u!1 &6478027263414452235
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ad1b90eaead1242a1cbf80322534aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPatrol: 1
+  canNavigate: 0
   player: {fileID: 0}
   waitTime: 2
   focusTime: 1
@@ -212,3 +214,6 @@ MonoBehaviour:
   patrolSpeed: 4
   patrolRange: 5
   seen: 0
+  attackMode: 1
+  rbPlayer: {fileID: 0}
+  enemyTurn: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}

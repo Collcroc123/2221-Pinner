@@ -1,48 +1,103 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
-    public int healthAmount = 0;
-    public IntData health;
+    private WaitForFixedUpdate wffu;
+    public int health = 0;
+    public int blockAmount = 0;
+    public int damageAmount = 0;
+    public IntData healthData;
+    public IntData maxHealth;
     public bool doesDamage;
     public bool changesMaxHealth;
-    public IntData maxHealth;
     public Slider healthBar;
+    public AIBehaviour ai;
+    public BoolData enemyTurn;
+    private int spaceCount = 0;
+    private bool checkSpace = false;
     
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (doesDamage)
-            {
-                if (changesMaxHealth)
-                {
-                    maxHealth.value -= healthAmount;
-                    healthBar.maxValue = maxHealth.value;
-                }
-                else if (!changesMaxHealth)
-                {
-                    health.value -= healthAmount;
-                }
-            }
-            else if (!doesDamage)
-            {
-                if (changesMaxHealth)
-                {
-                    maxHealth.value += healthAmount;
-                    healthBar.maxValue = maxHealth.value;
-                }
-                else if (!changesMaxHealth)
-                {
-                    health.value += healthAmount;
-                }
-            }
+            StartCoroutine(Damage());
+        }
+    }
 
-            if (health.value > maxHealth.value)
+    private void Update()
+    {
+        healthBar.value = healthData.value;
+        if (checkSpace)
+        {
+            if (Input.GetButtonDown("Jump"))
             {
-                health.value = maxHealth.value;
+                spaceCount++;
             }
         }
+    }
+
+    public IEnumerator Damage()
+    {
+        checkSpace = true;
+        yield return new WaitForSeconds(0.5f);
+        checkSpace = false;
+        print(spaceCount);
+        if (spaceCount == 1)
+        {
+            health = blockAmount;
+        }
+        else
+        {
+            health = damageAmount;
+        }
+
+        if (doesDamage)
+        {
+            if (changesMaxHealth)
+            {
+                maxHealth.value -= health;
+                healthBar.maxValue = maxHealth.value;
+            }
+            else if (!changesMaxHealth)
+            {
+                healthData.value -= health;
+            }
+        }
+        else if (!doesDamage)
+        {
+            if (changesMaxHealth)
+            {
+                maxHealth.value += health;
+                healthBar.maxValue = maxHealth.value;
+            }
+            else if (!changesMaxHealth)
+            {
+                healthData.value += health;
+            }
+        }
+
+        if (healthData.value > maxHealth.value)
+        {
+            healthData.value = maxHealth.value;
+        }
+
+        if (healthData.value <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
+        
+        spaceCount = 0;
+        
+        ai.canNavigate = false;
+        ai.canPatrol = false;
+        ai.seen = false;
+        enemyTurn.value = false;
+        ai.StopCoroutine(ai.Navigate());
+        ai.StartCoroutine(ai.Patrol());
+        gameObject.SetActive(false);
+        yield return wffu;
     }
 }

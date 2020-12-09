@@ -136,6 +136,7 @@
             </e>
           </e>
         </e>
+        <e p="EnemyDamage.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AIBehaviour.cs" t="Include" />
           <e p="BattleManager.cs" t="Include" />
@@ -150,7 +151,6 @@
             </e>
           </e>
           <e p="FirstAttackManager.cs" t="Include" />
-          <e p="FirstHit.cs" t="Include" />
           <e p="HealthManager.cs" t="Include" />
           <e p="MouseObj.cs" t="Include" />
           <e p="PlayerAttack.cs" t="Include" />
@@ -159,7 +159,6 @@
           <e p="SceneSwitch.cs" t="Include" />
           <e p="SetSpawn.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />
-          <e p="TouchDetector.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
         </e>
       </e>
