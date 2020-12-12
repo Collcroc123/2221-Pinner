@@ -20,34 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d76b2c2-5137-46a1-b02f-99107dadb719" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EnemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EnemyDamage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Battle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Battle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/World.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/World.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/BlockedHit.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/BlockedHit.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Floats.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Ints.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Ints/Ammo.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Ints/Ammo.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Ints/Health.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Ints/Health.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Ints/MaxAmmo.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Ints/MaxAmmo.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Ints/MaxHealth.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Ints/MaxHealth.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Vector3s.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstAttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirstAttackManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstHit.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstHit.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchDetector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchDetector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +41,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerRoller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseObj.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Datas/Codes/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Datas/Codes/Vector3Data.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Datas/Codes/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EnemyDamage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseObj.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Datas/Codes/Vector3Data.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -94,12 +71,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerRoller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Datas/Codes/BoolData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TouchDetector.cs" />
-        <option value="$PROJECT_DIR$/Assets/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirstAttackManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
       </list>
     </option>
   </component>
@@ -173,6 +150,7 @@
       <workItem from="1607289351002" duration="1160000" />
       <workItem from="1607372652064" duration="12937000" />
       <workItem from="1607488209465" duration="23079000" />
+      <workItem from="1607731722298" duration="913000" />
     </task>
     <servers />
   </component>
