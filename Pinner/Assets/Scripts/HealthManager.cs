@@ -14,6 +14,7 @@ public class HealthManager : MonoBehaviour
     public bool doesDamage;
     public bool changesMaxHealth;
     public Slider healthBar;
+    public Text hpText;
     public AIBehaviour ai;
     public BoolData enemyTurn;
     private int spaceCount = 0;
@@ -30,6 +31,7 @@ public class HealthManager : MonoBehaviour
     private void Update()
     {
         healthBar.value = healthData.value;
+        hpText.text = healthData.value.ToString();
         if (checkSpace)
         {
             if (Input.GetButtonDown("Jump"))
@@ -86,6 +88,7 @@ public class HealthManager : MonoBehaviour
 
         if (healthData.value <= 0)
         {
+            yield return new WaitForSeconds(1.2f);
             SceneManager.LoadScene(2);
         }
         

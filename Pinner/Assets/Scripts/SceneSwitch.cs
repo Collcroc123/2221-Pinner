@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
@@ -12,7 +13,13 @@ public class SceneSwitch : MonoBehaviour
 
     public void Switch()
     {
+        StartCoroutine(AnimSwitch());
+    }
+
+    IEnumerator AnimSwitch()
+    {
         anim.SetTrigger("StartFade");
+        yield return new WaitForSeconds(1.2f);
         SceneManager.LoadScene(sceneNumber);
     }
 

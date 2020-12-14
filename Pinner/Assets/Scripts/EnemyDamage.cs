@@ -1,12 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class EnemyDamage : MonoBehaviour
 {
     private Rigidbody playerRB;
-    public float enemyHealth = 50;
+    public float enemyHealth = 100;
     public Slider enemySlider;
+    public Text enemyHPText;
+    private float pSpeed;
     
     void Start()
     {
@@ -16,18 +19,38 @@ public class EnemyDamage : MonoBehaviour
     void Update()
     {
         enemySlider.value = enemyHealth;
+        enemyHPText.text = enemyHealth.ToString();
+        pSpeed = playerRB.velocity.magnitude;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            enemyHealth -= playerRB.velocity.magnitude;
+            if (pSpeed <= 1f)
+            {
+                enemyHealth -= 0f;
+            }
+            else if (pSpeed < 10f)
+            {
+                enemyHealth -= 10f;
+            }
+            else
+            {
+                enemyHealth -= pSpeed;
+            }
+            print(pSpeed);
             if (enemyHealth <= 0.5f)
             {
                 other.gameObject.SetActive(false);
-                SceneManager.LoadScene(2);
+                StartCoroutine(Scene());
             }
         }
+    }
+
+    IEnumerator Scene()
+    {
+        yield return new WaitForSeconds(1.2f);
+        SceneManager.LoadScene(2);
     }
 }

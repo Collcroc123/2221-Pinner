@@ -150,6 +150,7 @@
             </e>
           </e>
           <e p="EnemyDamage.cs" t="Include" />
+          <e p="EscMenu.cs" t="Include" />
           <e p="FirstAttackManager.cs" t="Include" />
           <e p="HealthManager.cs" t="Include" />
           <e p="MouseObj.cs" t="Include" />

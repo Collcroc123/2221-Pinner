@@ -22,12 +22,20 @@
     <list default="true" id="3d76b2c2-5137-46a1-b02f-99107dadb719" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pinner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyDamage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyDamage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/House 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/House 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/6 Purple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/6 Purple.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HealthSlider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HealthSlider.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/House.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/House.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Battle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Battle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/House 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/House 1.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/World.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/World.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Datas/Spawn.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Datas/Spawn.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstAttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirstAttackManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseObj.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EscMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Datas/Codes/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Datas/Codes/Vector3Data.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Datas/Codes/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,7 +64,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jump.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IntData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Healing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
@@ -75,11 +83,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TouchDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyDamage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FirstAttackManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TextDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EscMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FirstAttackManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" />
       </list>
     </option>
   </component>
@@ -155,6 +165,7 @@
       <workItem from="1607488209465" duration="23079000" />
       <workItem from="1607731722298" duration="913000" />
       <workItem from="1607838615896" duration="1767000" />
+      <workItem from="1607914566136" duration="5163000" />
     </task>
     <servers />
   </component>
