@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu]
-public class IntData : ScriptableObject
+public class ObjectData : ScriptableObject
 {
-    public int value;
+    public GameObject value;
     
     private void OnEnable()
     {

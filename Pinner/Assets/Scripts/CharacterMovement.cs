@@ -24,18 +24,15 @@ public class CharacterMovement : MonoBehaviour
             moveSpeed = 7.5f;
         }
         
-        if (Input.GetButtonDown("Jump") && jumpCount < 2)
+        if (Input.GetButtonDown("Jump"))
         {
-            velocity.y = jumpHeight;
-            jumpCount++;
+            if (controller.isGrounded)
+            {
+                velocity.y = jumpHeight;
+            }
         }
-        if (controller.isGrounded)
-        {
-            jumpCount = 1;
-        }
-        
-        velocity.y += gravity * Time.deltaTime;
-        //controller.Move(velocity * Time.deltaTime);
+
+        velocity.y += gravity * Time.deltaTime; ;
         controller.Move(move * (Time.deltaTime * moveSpeed));
     }
 }

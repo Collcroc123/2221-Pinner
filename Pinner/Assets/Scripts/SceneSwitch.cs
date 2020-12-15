@@ -15,6 +15,11 @@ public class SceneSwitch : MonoBehaviour
     {
         StartCoroutine(AnimSwitch());
     }
+    
+    public void Exit()
+    {
+        StartCoroutine(ExitGame());
+    }
 
     IEnumerator AnimSwitch()
     {
@@ -23,8 +28,10 @@ public class SceneSwitch : MonoBehaviour
         SceneManager.LoadScene(sceneNumber);
     }
 
-    public void ExitGame()
+    public IEnumerator ExitGame()
     {
+        anim.SetTrigger("StartFade");
+        yield return new WaitForSeconds(1.2f);
         Application.Quit();
     }
 }

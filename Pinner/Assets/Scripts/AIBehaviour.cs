@@ -24,6 +24,7 @@ public class AIBehaviour : MonoBehaviour
     public BoolData enemyTurn;
     public GameObject damage;
     private bool coroRunning = false;
+    //private bool
 
     private void Start()
     {
@@ -38,6 +39,10 @@ public class AIBehaviour : MonoBehaviour
     {
         if (!coroRunning)
         {
+            if (gameObject.activeInHierarchy == false)
+            {
+                //oh no
+            }
             canPatrol = false;
             canNavigate = false;
             if (attackMode || enemyTurn.value == true)
@@ -97,23 +102,29 @@ public class AIBehaviour : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        canPatrol = false;
-        canNavigate = false;
-        if (attackMode || enemyTurn.value == true)
+        if (other.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(Navigate());
-        }
-        else
-        {
-            StartCoroutine(Patrol());
+            canPatrol = false;
+            canNavigate = false;
+            if (attackMode || enemyTurn.value == true)
+            {
+                StartCoroutine(Navigate());
+            }
+            else
+            {
+                StartCoroutine(Patrol());
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        canPatrol = false;
-        canNavigate = false;
-        seen = false;
-        StartCoroutine(Patrol());
+        if (other.gameObject.CompareTag("Player"))
+        {
+            canPatrol = false;
+            canNavigate = false;
+            seen = false;
+            StartCoroutine(Patrol());
+        }
     }
 }

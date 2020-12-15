@@ -9,8 +9,11 @@ public class EnemyDamage : MonoBehaviour
     public float enemyHealth = 100;
     public Slider enemySlider;
     public Text enemyHPText;
+    public Animator anim;
     private float pSpeed;
-    
+    public bool boss = false;
+    public IntData enemyKilled;
+
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
@@ -42,6 +45,7 @@ public class EnemyDamage : MonoBehaviour
             print(pSpeed);
             if (enemyHealth <= 0.5f)
             {
+                enemyKilled.value++;
                 other.gameObject.SetActive(false);
                 StartCoroutine(Scene());
             }
@@ -50,7 +54,15 @@ public class EnemyDamage : MonoBehaviour
 
     IEnumerator Scene()
     {
+        anim.SetTrigger("StartFade");
         yield return new WaitForSeconds(1.2f);
-        SceneManager.LoadScene(2);
+        if (boss)
+        {
+            SceneManager.LoadScene(11);
+        }
+        else
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }

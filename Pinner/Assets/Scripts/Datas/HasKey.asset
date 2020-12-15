@@ -2,14 +2,14 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 32
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1b06866093506249be8aff50cda5227, type: 3}
-  m_Name: Spawn
+  m_Script: {fileID: 11500000, guid: bc6a08493d7845e4aa492437e9d9d77c, type: 3}
+  m_Name: HasKey
   m_EditorClassIdentifier: 
-  value: {x: -0.42, y: 40.059692, z: 112.44}
+  value: 0

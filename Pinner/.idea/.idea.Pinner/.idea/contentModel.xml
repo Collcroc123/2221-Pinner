@@ -139,27 +139,27 @@
         <e p="Scripts" t="Include">
           <e p="AIBehaviour.cs" t="Include" />
           <e p="BattleManager.cs" t="Include" />
-          <e p="Bullet.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
           <e p="Datas" t="Include">
             <e p="Codes" t="Include">
               <e p="BoolData.cs" t="Include" />
               <e p="FloatData.cs" t="Include" />
               <e p="IntData.cs" t="Include" />
+              <e p="ObjectData.cs" t="Include" />
               <e p="Vector3Data.cs" t="Include" />
             </e>
           </e>
+          <e p="DungeonDoor.cs" t="Include" />
           <e p="EnemyDamage.cs" t="Include" />
+          <e p="EnemySetter.cs" t="Include" />
           <e p="EscMenu.cs" t="Include" />
+          <e p="ETurnFix.cs" t="Include" />
           <e p="FirstAttackManager.cs" t="Include" />
           <e p="HealthManager.cs" t="Include" />
           <e p="MouseObj.cs" t="Include" />
-          <e p="PlayerAttack.cs" t="Include" />
           <e p="PlayerRespawn.cs" t="Include" />
-          <e p="PlayerRoller.cs" t="Include" />
           <e p="SceneSwitch.cs" t="Include" />
           <e p="SetSpawn.cs" t="Include" />
-          <e p="Shooting.cs" t="Include" />
           <e p="TextDisplayer.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
         </e>

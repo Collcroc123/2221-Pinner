@@ -19,6 +19,7 @@ public class HealthManager : MonoBehaviour
     public BoolData enemyTurn;
     private int spaceCount = 0;
     private bool checkSpace = false;
+    public IntData enemyNum;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -34,7 +35,7 @@ public class HealthManager : MonoBehaviour
         hpText.text = healthData.value.ToString();
         if (checkSpace)
         {
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetKeyDown("space"))
             {
                 spaceCount++;
             }
@@ -86,8 +87,9 @@ public class HealthManager : MonoBehaviour
             healthData.value = maxHealth.value;
         }
 
-        if (healthData.value <= 0)
+        if (healthData.value <= 0f)
         {
+            enemyNum.value = 0;
             yield return new WaitForSeconds(1.2f);
             SceneManager.LoadScene(2);
         }
