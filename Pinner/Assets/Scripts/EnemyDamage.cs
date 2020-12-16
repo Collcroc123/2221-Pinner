@@ -13,6 +13,7 @@ public class EnemyDamage : MonoBehaviour
     private float pSpeed;
     public bool boss = false;
     public IntData enemyKilled;
+    //public ObjectData enemy;
 
     void Start()
     {
@@ -46,6 +47,7 @@ public class EnemyDamage : MonoBehaviour
             if (enemyHealth <= 0.5f)
             {
                 enemyKilled.value++;
+                //enemy.value.SetActive(false);
                 other.gameObject.SetActive(false);
                 StartCoroutine(Scene());
             }

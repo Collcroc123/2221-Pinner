@@ -5665,6 +5665,7 @@ MonoBehaviour:
   hpText: {fileID: 542368300}
   ai: {fileID: 3618625247119887806}
   enemyTurn: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+  enemyNum: {fileID: 0}
 --- !u!65 &311419452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26705,7 +26706,6 @@ MonoBehaviour:
   anim: {fileID: 589296279}
   boss: 1
   enemyKilled: {fileID: 11400000, guid: 10258f0f779af144a946de0553c586f3, type: 2}
-  worldEnemy: {fileID: 11400000, guid: 63006045f8bf40c4a896ab010c003351, type: 2}
 --- !u!135 &960271652
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26759,6 +26759,7 @@ MonoBehaviour:
   hpText: {fileID: 2139335930}
   ai: {fileID: 3618625247119887806}
   enemyTurn: {fileID: 11400000, guid: af589333582d1a74fb17e7bf5fbc8da3, type: 2}
+  enemyNum: {fileID: 0}
 --- !u!4 &1001523217
 Transform:
   m_ObjectHideFlags: 0
@@ -44100,11 +44101,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7217281820869059811, guid: 6530d99bca3bd9e4599387ac615cd15e, type: 3}
       propertyPath: m_Value
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7217281820869059811, guid: 6530d99bca3bd9e4599387ac615cd15e, type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6530d99bca3bd9e4599387ac615cd15e, type: 3}

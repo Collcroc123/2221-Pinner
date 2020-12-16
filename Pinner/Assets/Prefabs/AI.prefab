@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2973849400866347210}
   m_Layer: 0
-  m_Name: Junk
+  m_Name: Damage Junk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,6 +94,7 @@ MonoBehaviour:
   enemy: {fileID: 6478027263414452235}
   deadNum: {fileID: 11400000, guid: 3ce7f4f9a6dbde14f9f85db27fb05154, type: 2}
   enemyNum: 0
+  enemyObject: {fileID: 11400000, guid: 5eb129768eab8a249a7fb9fa57aa02fe, type: 2}
 --- !u!114 &2676718222920558877
 MonoBehaviour:
   m_ObjectHideFlags: 0

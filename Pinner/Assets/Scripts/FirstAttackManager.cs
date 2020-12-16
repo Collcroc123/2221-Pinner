@@ -11,9 +11,11 @@ public class FirstAttackManager : MonoBehaviour
     public GameObject enemy;
     public IntData deadNum;
     public int enemyNum;
+    //public ObjectData enemyObject;
 
     private void Start()
     {
+        
         if(deadNum.value == enemyNum)
         {
             enemy.SetActive(false);
@@ -27,6 +29,7 @@ public class FirstAttackManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         deadNum.value = enemyNum;
+        //enemyObject.value = enemy;
         if (artInt.seen == false)
         {
             enemyTurn.value = false;

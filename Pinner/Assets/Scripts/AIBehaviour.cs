@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -24,7 +25,6 @@ public class AIBehaviour : MonoBehaviour
     public BoolData enemyTurn;
     public GameObject damage;
     private bool coroRunning = false;
-    //private bool
 
     private void Start()
     {
@@ -34,18 +34,14 @@ public class AIBehaviour : MonoBehaviour
         focusFor = new WaitForSeconds(focusTime);
         StartCoroutine(Patrol());
     }
-
+    /*
     private void Update()
     {
         if (!coroRunning)
         {
-            if (gameObject.activeInHierarchy == false)
-            {
-                //oh no
-            }
             canPatrol = false;
             canNavigate = false;
-            if (attackMode || enemyTurn.value == true)
+            if (enemyTurn.value == true)
             {
                 StartCoroutine(Navigate());
             }
@@ -55,7 +51,7 @@ public class AIBehaviour : MonoBehaviour
             }
         }
     }
-
+    */
     public IEnumerator Navigate()
     {
         coroRunning = true;
@@ -69,7 +65,7 @@ public class AIBehaviour : MonoBehaviour
             agent.speed = runSpeed;
             yield return wffu;
             agent.destination = player.position;
-            if (enemyTurn.value == false)
+            if (enemyTurn.value == false && !attackMode)
             {
                 coroRunning = false;
                 StopCoroutine(Navigate());
@@ -91,7 +87,7 @@ public class AIBehaviour : MonoBehaviour
             if (agent.pathPending || !(agent.remainingDistance < 0.5f)) continue;
             yield return waitFor;
             agent.destination = (Random.insideUnitSphere * patrolRange) + startPos;
-            if (enemyTurn.value == true)
+            if (enemyTurn.value == true && !attackMode)
             {
                 coroRunning = false;
                 StopCoroutine(Patrol());
@@ -107,6 +103,23 @@ public class AIBehaviour : MonoBehaviour
             canPatrol = false;
             canNavigate = false;
             if (attackMode || enemyTurn.value == true)
+            {
+                StartCoroutine(Navigate());
+            }
+            else
+            {
+                StartCoroutine(Patrol());
+            }
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (!coroRunning && other.gameObject.CompareTag("Player"))
+        {
+            canPatrol = false;
+            canNavigate = false;
+            if (enemyTurn.value == true)
             {
                 StartCoroutine(Navigate());
             }
